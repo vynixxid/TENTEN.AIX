@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Berita - TENTEN.News</title>
+  <link rel="stylesheet" href="assets/css/1_style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">TENTEN.News</div>
+    <nav class="navbar">
+      <a href="1_index.html">Beranda</a>
+      <a href="2_berita.html">Berita</a>
+      <a href="5_donasi.html">Donasi</a>
+      <a href="6_login.html">Login</a>
+      <a href="7_register.html">Daftar</a>
+      <a href="8_upload.html" class="active">Upload</a>
+    </nav>
+  </header>
+
+  <!-- Form Upload -->
+  <section class="upload-section">
+    <h1>Upload Berita Baru</h1>
+    <form class="upload-form" action="#" method="POST" enctype="multipart/form-data">
+      <label for="title">Judul Berita</label>
+      <input type="text" id="title" name="title" placeholder="Judul utama berita" required />
+
+      <label for="category">Kategori</label>
+      <select id="category" name="category">
+        <option value="politik">Politik</option>
+        <option value="teknologi">Teknologi</option>
+        <option value="ekonomi">Ekonomi</option>
+        <option value="hiburan">Hiburan</option>
+        <option value="lainnya">Lainnya</option>
+      </select>
+
+      <label for="image">Thumbnail / Gambar Utama</label>
+      <input type="file" id="image" name="image" accept="image/*" />
+
+      <label for="content">Isi Berita</label>
+      <textarea id="content" name="content" rows="8" placeholder="Tulis berita lengkap di sini..." required></textarea>
+
+      <button type="submit">Upload Berita</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 TENTEN.News - Powered by AI</p>
+  </footer>
+
+  <script src="assets/js/1_script.js"></script>
+</body>
+</html>
